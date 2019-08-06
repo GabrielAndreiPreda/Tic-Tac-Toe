@@ -1,11 +1,31 @@
 <html>
+	<head>
+		<style>
+			#reset {
+				width: 30%;
+				height: 5%;
+				position: absolute;
+				bottom: 47%;
+				text-align: center;
+				background-color: white;
+				font-size: 2em;
+				color: black;
+				border: black dashed 0.5vh;
+				display: none;
+				z-index: 10;
+				cursor: default;
+				user-select: none;
+				transition-property: all;
+				transition-duration: 0.2s;
+			}
+			#reset:hover {
+				transform: scale(1.1);
+			}
+		</style>
+	</head>
 	<body style="height=100%; width=100%; display:flex;justify-content: center; align-items:center">
 		<canvas id="myCanvas" style="border: black solid;display:block;  "></canvas>
-		<div
-			id="reset"
-			style="width:15%;height: 5%;position: absolute;bottom: 50%;text-align: center;background-color: white;
-			font-size: 2em;color:black;border:black dashed 0.5vh;display: none;z-index: 10;"
-		>
+		<div id="reset">
 			<p style="margin-top:0.7vh">Restart</p>
 		</div>
 		<script type="text/javascript" src="main.js"></script>
